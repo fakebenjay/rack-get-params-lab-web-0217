@@ -1,0 +1,38 @@
+[32m.[0m[32m.[0m[31mF[0m[32m.[0m
+
+Failures:
+
+  1) Shopping Cart Rack App /add Will add an item that is in the @@items list
+     [31mFailure/Error: get '/add?item=Figs'[0m
+     [31mNoMethodError:[0m
+     [31m  undefined method `each' for nil:NilClass[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/rack-1.6.4/lib/rack/utils.rb:527:in `merge!'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/rack-1.6.4/lib/rack/utils.rb:533:in `merge'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/rack-1.6.4/lib/rack/response.rb:27:in `initialize'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/rack-1.6.4/lib/rack/mock.rb:169:in `initialize'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/rack-test-0.6.3/lib/rack/mock_session.rb:32:in `new'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/rack-test-0.6.3/lib/rack/mock_session.rb:32:in `request'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/rack-test-0.6.3/lib/rack/test.rb:58:in `get'[0m
+     [36m# ./spec/rack_mechanics_spec.rb:25:in `block (3 levels) in <top (required)>'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/bundler-1.14.3/lib/bundler/cli/exec.rb:74:in `load'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/bundler-1.14.3/lib/bundler/cli/exec.rb:74:in `kernel_load'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/bundler-1.14.3/lib/bundler/cli/exec.rb:27:in `run'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/bundler-1.14.3/lib/bundler/cli.rb:335:in `exec'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/bundler-1.14.3/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/bundler-1.14.3/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/bundler-1.14.3/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/bundler-1.14.3/lib/bundler/cli.rb:20:in `dispatch'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/bundler-1.14.3/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/bundler-1.14.3/lib/bundler/cli.rb:11:in `start'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/bundler-1.14.3/exe/bundle:32:in `block in <top (required)>'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/bundler-1.14.3/lib/bundler/friendly_errors.rb:121:in `with_friendly_errors'[0m
+     [36m# /Users/ben/.rvm/gems/ruby-2.3.3/gems/bundler-1.14.3/exe/bundle:24:in `<top (required)>'[0m
+
+Finished in 0.01639 seconds (files took 0.22262 seconds to load)
+[31m4 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/rack_mechanics_spec.rb:23[0m [36m# Shopping Cart Rack App /add Will add an item that is in the @@items list[0m
+
